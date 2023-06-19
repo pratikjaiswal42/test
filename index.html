@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Student Report</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+  <body>
+    <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+            <p>
+                <label for="student_id">Student ID:</label>
+                <input type="number" name="student_id" required>
+            </p>
+            <p>
+                <label for="first_name">First Name:</label>
+                <input type="text" name="first_name" required>
+            </p>
+            <p>
+                <label for="last_name">Last Name:</label>
+                <input type="text" name="last_name" required>
+            </p>
+            <p>
+                <label for="batch_class">Batch/Class:</label>
+                <input type="text" name="batch_class" required>
+            </p>
+            <p>
+                <label for="email">Email Address:</label>
+                <input type="email" name="email" required>
+            </p>
+            <p>
+                <label for="english_marks">English Marks:</label>
+                <input type="number" name="english_marks" step="0.01" min="0" max="100" required>
+            </p>
+            <p>
+                <label for="hindi_marks">Hindi Marks:</label>
+                <input type="number" name="hindi_marks" step="0.01" min="0" max="100" required>
+            </p>
+            <p>
+                <label for="math_marks">Math Marks:</label>
+                <input type="number" name="math_marks" step="0.01" min="0" max="100" required>
+            </p>
+            <p>
+                <label for="science_marks">Science Marks:</label>
+                <input type="number" name="science_marks" step="0.01" min="0" max="100" required>
+            </p>
+            <p>
+                <label for="history_marks">History Marks:</label>
+                <input type="number" name="history_marks" step="0.01" min="0" max="100" required>
+            </p>
+            <p>
+                <label for="geography_marks">Geography Marks:</label>
+                <input type="number" name="geography_marks" step="0.01" min="0" max="100" required>
+            </p>
+            <p>
+                <label for="remarks">Remarks:</label>
+                <textarea name="remarks" rows="4" cols="50" maxlength="150"></textarea>
+            </p>
+            <p>
+                <input type="submit" value="Generate Report">
+            </p>
+        </form>
+</body>
+</html>
